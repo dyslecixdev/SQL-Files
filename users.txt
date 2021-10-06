@@ -1,0 +1,11 @@
+USE users_schema;
+INSERT INTO users_schema.users (first_name, last_name, email) VALUES ('Christian', 'Demesa', '123@gmail.com');
+INSERT INTO users_schema.users (first_name, last_name, email) VALUES ('Bianca', 'Demesa', '456@gmail.com');
+INSERT INTO users_schema.users (first_name, last_name, email) VALUES ('James', 'Demesa', '789@gmail.com');
+SELECT * FROM users;
+SELECT * FROM users WHERE email = '123@gmail.com'
+SELECT * FROM users WHERE id = 3;
+UPDATE users_schema.users SET last_name = 'Pancakes' WHERE id = 3;
+DELETE FROM users WHERE id = 2;
+SELECT * FROM users ORDER BY first_name;
+SELECT * FROM users ORDER BY first_name DESC;
